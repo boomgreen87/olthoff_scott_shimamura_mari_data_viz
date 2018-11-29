@@ -72,9 +72,11 @@ labels = ('Gold', 'Silver', 'Bronze') # Creates y labels
 y_pos = np.arange(len(labels)) # The y locations for the ticks
 sizes = (int(len(canadaHockeyGold)), int(len(canadaHockeySilver)), int(len(canadaHockeyBronze))) # Sets bar sizes
 
+
 # Plots the bars
 fig, ax = plt.subplots()
 plt.barh(y_pos, sizes, align='center', color=['gold', 'silver', 'chocolate'])
+
 
 # Sets labels and ticks
 ax.set_yticks(y_pos)
@@ -86,4 +88,5 @@ plt.suptitle('Canada Olympic Medals in Ice Hockey', fontsize=16, fontweight='bol
 plt.title('(Since 1924)')
 
 # Shows the graph
+
 plt.show()
