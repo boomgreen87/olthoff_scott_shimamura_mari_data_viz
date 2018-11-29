@@ -88,5 +88,4 @@ plt.suptitle('Canada Olympic Medals in Ice Hockey', fontsize=16, fontweight='bol
 plt.title('(Since 1924)')
 
 # Shows the graph
-
 plt.show()
