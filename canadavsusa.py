@@ -5,7 +5,7 @@ from matplotlib.collections import EventCollection
 import numpy as np
 
 
-#x = [1924, 1928, 1932, 1948, 1952, 1960, 1964, 1968, 1976, 1984, 1992, 1994, 1998, 2002, 2006, 2010, 2014]
+x = ([])
 #y_labels = ['Canada', 'USA']
 #y_label_usa = ()
 #y_label_can = ()
@@ -13,12 +13,12 @@ import numpy as np
 #plt.plot(y_label_can, color='red')
 #plt.plot(y_label_usa, color='blue')
  
-x =np.linespace(0,10,1000)
-ax.plot(x, np.sin(x));
+#x =np.linespace(0,10,1000)
+x.plot(x, np.sin(x));
 
-ax = plt.axes()
-ax.plot (x, np.sin(x))
-ax.set(xlim=(1924, 1928, 1932, 1948, 1952, 1960, 1964, 1968, 1976, 1984, 1992, 1994, 1998, 2002, 2006, 2010, 2014), ylim=(Canada, USA),
+x = plt.axes()
+x.plot (x, np.sin(x))
+x.set(xlim=(1924, 1928, 1932, 1948, 1952, 1960, 1964, 1968, 1976, 1984, 1992, 1994, 1998, 2002, 2006, 2010, 2014), ylim=('Canada', 'USA'),
 title = 'Comparing Canda and USA Medals throughout the years');
 
 plt.xlabel('Years')
