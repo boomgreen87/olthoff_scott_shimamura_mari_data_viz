@@ -54,28 +54,28 @@ print('Canadian women gold medals:', len(womenGold_1924), 'in 1924,', len(womenG
 
 
 
-# # Double bar graph visualization
-# plt.rcdefaults()
+# Double bar graph visualization
+plt.rcdefaults()
 
-# # Values of the bars
+# Values of the bars
 menMedals = (len(menGold_1924), len(menGold_1948), len(menGold_1972), len(menGold_2002), len(menGold_2014))
 
 womenMedals = (len(womenGold_1924), len(womenGold_1948), len(womenGold_1972), len(womenGold_2002), len(womenGold_2014))
 
-ind = np.arange(len(menMedals))  # The x locations for the groups
+x_pos = np.arange(len(menMedals))  # The x locations for the groups
 width = 0.35  # The width of the bars
 
 # Creates the bars
 fig, ax = plt.subplots()
-menBar = ax.bar(ind - width/2, menMedals, width, color='royalblue', label='Men')
-womenBar = ax.bar(ind + width/2, womenMedals, width, color='hotpink', label='Women')
+menBar = ax.bar(x_pos - width/2, menMedals, width, color='royalblue', label='Men')
+womenBar = ax.bar(x_pos + width/2, womenMedals, width, color='hotpink', label='Women')
 
 # Sets labels and ticks
 plt.ylabel('Number of Gold Medals', fontweight='bold')
 plt.xlabel('Year', fontweight='bold')
 plt.suptitle('Canadian Gold Medals: Men vs. Women', fontsize=16, fontweight='bold')
 plt.title('(1924, 1948, 1972, 2002, 2014)')
-ax.set_xticks(ind)
+ax.set_xticks(x_pos)
 ax.set_xticklabels(('1924', '1948', '1972', '2002', '2014'))
 plt.legend()
 
@@ -94,6 +94,7 @@ def autolabel(rects, xpos='center'):
 autolabel(menBar, 'center')
 autolabel(womenBar, 'center')
 
+# Shows graph
 plt.show()
 
 
@@ -102,7 +103,7 @@ plt.show()
 # Line graph visualization
 plt.rcdefaults()
 
-ind = np.arange(len(menMedals))  # The x locations for the groups
+x_pos = np.arange(len(menMedals))  # The x locations for the groups
 
 # Draws Lines
 fig, ax = plt.subplots()
@@ -114,8 +115,9 @@ plt.ylabel('Number of Gold Medals', fontweight='bold')
 plt.xlabel('Year', fontweight='bold')
 plt.suptitle('Canadian Gold Medals: Men vs. Women', fontsize=16, fontweight='bold')
 plt.title('(1924, 1948, 1972, 2002, 2014)')
-ax.set_xticks(ind)
+ax.set_xticks(x_pos)
 ax.set_xticklabels(('1924', '1948', '1972', '2002', '2014'))
 plt.legend()
 
+# Shows graph
 plt.show()
