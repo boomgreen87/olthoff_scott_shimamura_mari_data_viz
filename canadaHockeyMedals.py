@@ -54,10 +54,11 @@ plt.suptitle('Canada Olympic Medals in Ice Hockey', fontsize=16, fontweight='bol
 plt.title('(Since 1924)')
 
 # Draws circle in middle
-circle=plt.Circle( (0,0), 0.5, color='white')
-p=plt.gcf()
+circle = plt.Circle( (0,0), 0.5, color='white')
+p = plt.gcf()
 p.gca().add_artist(circle)
 
+# Shows graph
 plt.show()
 
 
