@@ -175,6 +175,7 @@ plt.xlabel('Years')
 plt.ylabel('Countries')
 plt.title('Canada VS USA \n Totals Medals')
 plt.legend()
+
 plt.show()
 
 
