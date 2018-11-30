@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-# Line graph with the y axis CANADA VS USA - 2 lines. The x axis is gold, silver and bronze. 
+# Line graph with the y axis CANADA VS USA - 2 lines. 
 # The y axis is the countries plus the amount of medals 
 
 Canada_1924 = []
@@ -143,6 +143,7 @@ plt.plot(CanMedals, label='Canada', color='cyan', linewidth=4)
 plt.plot(UsaMedals, label='USA', color='magenta', linewidth=4)
 
 # labels and ticks
+#i should do 1924, 1960, 1972, 2002, 2014
 plt.ylabel('CANADA VS USA')
 plt.xlabel('YEAR')
 plt.suptitle('Totals Medals Canada VS USA')
@@ -157,8 +158,14 @@ plt.show ()
 
 
 
-# scatter plot visualization
+
 plt.rcdefaults()
+# scatter plot visualization
+# i need my x axis is my years
+# i need my y axis to be my countries 
+# the info in the graph needs to be the amount of medals each country won (1924,1960,1976,2002,2014)
+# Canada be red 
+# USA can be blue 
 
 years = ['1924','1960','1976','2002','2014']
 
@@ -169,3 +176,5 @@ plt.ylabel('Countries')
 plt.title('Canada VS USA \n Totals Medals')
 plt.legend()
 plt.show()
+
+
