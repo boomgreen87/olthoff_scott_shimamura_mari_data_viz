@@ -1,16 +1,14 @@
 @charset "UTF-8";
 
+
 #title
 { 
-    padding: 30px;
+    text-align: center;
 }
-
 
 
 #info
 {
-   margin-top: auto 0;
-   margin-left: 25px;
-   margin-right: 25px;
+    text-align: center;
 }
 
